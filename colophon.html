@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Colophon: How the Arubeauty website was built.">
+    <meta name="author" content="Serikkali Nariman">
+    <title>Colophon — Arubeauty</title>
+</head>
+<body>
+    <!-- Author: Serikkali Nariman -->
+    <header>
+        <h1>Arubeauty</h1>
+        <p>Makeup Studio & Training Courses</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Prices</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="colophon.html">Colophon</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Выполняем требование: 2 ссылки на id внутри одной страницы -->
+        <nav>
+            <p>Jump to: <a href="#creation-process">Creation Process</a> | <a href="#technical-details">Technical Details</a></p>
+        </nav>
+
+        <article id="creation-process">
+            <h2>How this site was made</h2>
+            <!-- Сюда нужно будет написать 150-250 слов о том, как ты делал проект -->
+            <p>
+                Here you will write your text about creating the website.
+                <i>I wanted to create</i> a <b>simple</b> but <strong>effective</strong> platform for Aruzhan.
+                As she said, <q>beauty will save the world</q>.
+                <em>This project</em> is my 1<sup>st</sup> experience in web development.
+            </p>
+
+            <hr>
+
+            <!-- Выполняем требование: вложенный список и нумерованный список с атрибутом -->
+            <h3>Project Steps</h3>
+            <ol type="I"> 
+                <li>Planning the structure</li>
+                <li>
+                    Writing HTML
+                    <ul>
+                        <li>Drafting pages</li>
+                        <li>Creating forms and tables</li>
+                    </ul>
+                </li>
+                <li>Validation</li>
+            </ol>
+        </article>
+
+        <!-- Выполняем требование: использование aside и двух тегов abbr -->
+        <aside>
+            <h3>Fun Fact</h3>
+            <p>This site was coded entirely manually, without any <abbr title="Artificial Intelligence">AI</abbr> text generators for the main content or <abbr title="Cascading Style Sheets">CSS</abbr> frameworks.</p>
+        </aside>
+
+        <article id="technical-details">
+            <h2>Technical Details</h2>
+
+            <!-- Выполняем требование: список определений (dl, dt, dd) -->
+            <dl>
+                <dt>HTML5</dt>
+                <dd>The core markup language used to build the skeleton of this site.</dd>
+                <dt>VS Code</dt>
+                <dd>The primary code editor used for development.</dd>
+            </dl>
+
+            <p>
+                <!-- Выполняем требование: внешняя ссылка с target и rel -->
+                The site was tested using the <a href="https://validator.w3.org/" target="_blank" rel="noopener noreferrer">W3C HTML Validator</a>.
+            </p>
+
+            <!-- Выполняем требование: теги kbd, samp, br, pre, code и 4 HTML-сущности (&lt;, &gt;, &amp;, &copy;) -->
+            <p>
+                To save files in my editor, I press <kbd>Ctrl</kbd> + <kbd>S</kbd>.
+                When I commit, the terminal output looks like this: <samp>[main 6e3647a] Initial commit</samp>.
+                <br>
+                Here is an example of the code I wrote:
+            </p>
+
+            <pre><code>
+&lt;!-- Using HTML entities: &lt; and &gt; instead of brackets --&gt;
+&lt;header&gt;
+    &lt;h1&gt;Hello World &amp; welcome&lt;/h1&gt;
+&lt;/header&gt;
+            </code></pre>
+
+            <!-- Выполняем требование: использовать div и span только один раз и ОБЯЗАТЕЛЬНО с комментарием, объясняющим, почему не подошли семантические теги -->
+            
+            <!-- I use a div here because this block is purely visual for future CSS styling (like a card wrapper) and has no specific semantic meaning like section, article, or aside. -->
+            <div>
+                <p>
+                    This project is <mark>currently unstyled</mark>, but I am <small>excited</small> to learn more.
+                    <!-- I use a span here to isolate a specific word for future color changes, as no semantic tag fits this purely visual isolation. -->
+                    <span>Thank you</span> for visiting.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <h2>Contacts</h2>
+        <address>
+            <p>Phone: <a href="tel:+77768480043">+7 (776) 848-00-43</a></p>
+            <p>Email: <a href="mailto:aruzzhan7@gmail.com">aruzzhan7@gmail.com</a></p>
+            <p>Address: [Exact address will be added later]</p>
+            <p>Working hours: Flexible (by appointment only)</p>
+        </address>
+        <p>&copy; 2026 Arubeauty.</p>
+    </footer>
+</body>
+</html>
