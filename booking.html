@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book an appointment for makeup or training courses at Arubeauty.">
+    <meta name="author" content="Serikkali Nariman">
+    <title>Booking — Arubeauty</title>
+</head>
+<body>
+    <!-- Author: Serikkali Nariman -->
+    <header>
+        <h1>Arubeauty</h1>
+        <p>Makeup Studio & Training Courses</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services & Prices</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="colophon.html">Colophon</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Book an Appointment</h2>
+            <!-- Текст о правилах записи (150-250 слов) -->
+            <p>Here you will write about your booking policies, cancellation rules, and how to prepare for a makeup session...</p>
+            
+            <!-- Начало формы -->
+            <form action="#" method="POST">
+                <!-- The form does not send anything yet - there is no server behind it -->
+                
+                <fieldset>
+                    <legend>Client Information & Service Details</legend>
+
+                    <p>
+                        <label for="client-name">Full Name:</label><br>
+                        <input type="text" id="client-name" name="name" required placeholder="Jane Doe">
+                    </p>
+
+                    <p>
+                        <label for="client-email">Email Address:</label><br>
+                        <input type="email" id="client-email" name="email" required placeholder="jane@example.com">
+                    </p>
+
+                    <p>
+                        <label for="client-phone">Phone Number:</label><br>
+                        <input type="tel" id="client-phone" name="phone" required placeholder="+7 777 000 00 00">
+                    </p>
+
+                    <p>
+                        <label for="people-count">Number of people (for pair courses):</label><br>
+                        <input type="number" id="people-count" name="people_count" min="1" max="2" placeholder="1">
+                    </p>
+
+                    <p>
+                        <label for="booking-date">Desired Date:</label><br>
+                        <input type="date" id="booking-date" name="date" required>
+                    </p>
+
+                    <p>
+                        <label for="service-select">Choose a Service:</label><br>
+                        <select id="service-select" name="service" required>
+                            <option value="">-- Please choose an option --</option>
+                            <option value="day-makeup">Day / Evening Makeup</option>
+                            <option value="wedding-makeup">Wedding Makeup</option>
+                            <option value="diy-course">"Do It Yourself" Course</option>
+                            <option value="basic-course">Basic Makeup Artist Course</option>
+                        </select>
+                    </p>
+
+                    <fieldset>
+                        <legend>Preferred Time of Day</legend>
+                        <label>
+                            <input type="radio" name="time_preference" value="morning" required> Morning (09:00 - 13:00)
+                        </label><br>
+                        <label>
+                            <input type="radio" name="time_preference" value="afternoon"> Afternoon (13:00 - 18:00)
+                        </label><br>
+                        <label>
+                            <input type="radio" name="time_preference" value="evening"> Evening (18:00 - 21:00)
+                        </label>
+                    </fieldset>
+
+                    <p>
+                        <label for="client-notes">Additional Notes or Wishes:</label><br>
+                        <textarea id="client-notes" name="notes" rows="4" cols="50" placeholder="Tell me about your skin type, allergies, or makeup preferences..."></textarea>
+                    </p>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" name="agreement" required> I agree to the booking policies and terms of service.
+                        </label>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit Request</button>
+                        <button type="reset">Reset Form</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacts</h2>
+        <address>
+            <p>Phone: <a href="tel:+77768480043">+7 (776) 848-00-43</a></p>
+            <p>Email: <a href="mailto:aruzzhan7@gmail.com">aruzzhan7@gmail.com</a></p>
+            <p>Address: [Exact address will be added later]</p>
+            <p>Working hours: Flexible (by appointment only)</p>
+        </address>
+        <p>&copy; 2026 Arubeauty.</p>
+    </footer>
+</body>
+</html>
