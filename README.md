@@ -3,7 +3,7 @@
 This repository contains the project for Assignment 1 of the Web Technologies course[cite: 2].
 
 ## Project Overview
-This is a 4-page static website built entirely with raw HTML5. Per the assignment requirements, no CSS, JavaScript, or frameworks were used[cite: 2]. The site demonstrates proper semantic web structure, tables, and web forms based on a real, physically existing organization in Astana[cite: 2].
+This is a 4-page static website built entirely with raw HTML5. Per the assignment requirements, no CSS, JavaScript, or frameworks were used. The site demonstrates proper semantic web structure, tables, and web forms based on a real, physically existing organization in Astana.
 
 **Author:** Serikkali Nariman
 
