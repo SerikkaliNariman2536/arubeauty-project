@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arubeauty Client Portal: FAQ, Sign In, and Registration.">
+    <meta name="author" content="Serikkali Nariman">
+    <title>Client Portal — Arubeauty</title>
+</head>
+<body>
+    <header>
+        <h1>Arubeauty</h1>
+        <p>Makeup Studio &amp; Training Courses</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Prices</a></li>
+            <li><a href="booking.html">Booking</a></li>
+ 
+            <li><a href="portal.html">Client Portal &amp; FAQ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="faq">
+            <h2>Help Center (FAQ)</h2>
+            <p>Find answers to common questions or log in to manage your bookings.</p>
+            
+            <form action="#" method="GET">
+                <label for="faq-search">Search our FAQ:</label>
+                <input type="search" id="faq-search" name="q" list="faq-topics" placeholder="Type a topic (e.g., cosmetics)">
+                <datalist id="faq-topics">
+                    <option value="Cosmetics Brands"></option>
+                    <option value="Skin Preparation"></option>
+                    <option value="Cancellation Policy"></option>
+                    <option value="Course Tools"></option>
+                </datalist>
+                <button type="submit">Search</button>
+            </form>
+            <br>
+
+            <details open>
+                <summary><strong>What brands of cosmetics do you use?</strong></summary>
+                <p>We use only premium, hypoallergenic professional brands such as MAC, Charlotte Tilbury, Tom Ford, and Make Up For Ever to ensure long-lasting results and skin safety.</p>
+            </details>
+
+            <details>
+                <summary><strong>How should I prepare my skin before the appointment?</strong></summary>
+                <p>Please arrive with a clean face. Avoid using heavy night creams or oils the day before. Gentle exfoliation and a light moisturizer are highly recommended.</p>
+            </details>
+
+            <details>
+                <summary><strong>Can I reschedule my appointment?</strong></summary>
+                <p>Yes, but please let us know at least 48 hours in advance. Late rescheduling might lead to the forfeiture of your booking deposit.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <section id="auth">
+            <h2>Account Management</h2>
+            
+            <article>
+                <h3>Sign In</h3>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Existing Clients</legend>
+                        <p>
+                            <label for="login-email">Email:</label><br>
+                            <input type="email" id="login-email" name="email" required placeholder="example@mail.com">
+                        </p>
+                        <p>
+
+                            <label for="login-password">Password:</label><br>
+                            <input type="password" id="login-password" name="password" required>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="remember" checked> Remember me
+                            </label>
+                        </p>
+                        <button type="submit">Sign In</button>
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>Create New Account</h3>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>New Clients</legend>
+                        <p>
+                            <label for="reg-name">Full Name:</label><br>
+ 
+                            <input type="text" id="reg-name" name="fullname" required autofocus placeholder="Jane Doe">
+                        </p>
+                        <p>
+                            <label for="reg-email">Email:</label><br>
+                            <input type="email" id="reg-email" name="email" required placeholder="example@mail.com">
+                        </p>
+                        <p>
+
+                            <label for="reg-password">Password (min 8 chars):</label><br>
+                            <input type="password" id="reg-password" name="new_password" minlength="8" required>
+                        </p>
+                        <button type="submit">Register</button>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacts</h2>
+        <address>
+            <p>Phone: <a href="tel:+77768480043">+7 (776) 848-00-43</a></p>
+            <p>Email: <a href="mailto:aruzzhan7@gmail.com">aruzzhan7@gmail.com</a></p>
+            <p>Address: Uly Dala 80/1, Astana</p>
+            <p>Working hours: Flexible (by appointment only)</p>
+        </address>
+        <p>&copy; 2026 Arubeauty.</p>
+    </footer>
+</body>
+</html>
