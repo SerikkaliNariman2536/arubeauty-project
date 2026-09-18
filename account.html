@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Arubeauty Club to manage your bookings and makeup courses.">
+    <meta name="author" content="Serikkali Nariman">
+    <title>Arubeauty Club &amp; Account</title>
+</head>
+<body>
+    <header>
+        <h1>Arubeauty</h1>
+        <p>Makeup Studio &amp; Training Courses</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Prices</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="account.html">Arubeauty Club</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="club-benefits">
+            <h2>Welcome to Arubeauty Club</h2>
+            <p>Registration is more than just booking an appointment. By creating an account with us, you gain access to an exclusive client portal designed to make your beauty and education journey seamless.</p>
+            
+            <h3>Why Register?</h3>
+            <ul>
+                <li><strong>Manage Bookings:</strong> View, reschedule, or cancel your upcoming makeup sessions with one click.</li>
+                <li><strong>Course Tracking:</strong> If you are enrolled in our "Do It Yourself" or Basic Makeup Artist courses, track your schedule and access exclusive preparation materials.</li>
+                <li><strong>Welcome Bonus:</strong> New members receive a priority booking slot for their first Day or Evening Makeup session.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="auth-forms">
+            <h2>Access Your Account</h2>
+            <p>Please choose an option below to continue to your client dashboard.</p>
+            
+            <article>
+                <h3>Sign In</h3>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>Existing Club Members</legend>
+                        <p>
+                            <label for="login-email">Email Address:</label><br>
+                            <input type="email" id="login-email" name="email" required placeholder="example@mail.com">
+                        </p>
+                        <p>
+                            <label for="login-password">Password:</label><br>
+                            <input type="password" id="login-password" name="password" required>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="remember" checked> Keep me signed in
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit">Sign In to Dashboard</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </article>
+
+            <br>
+
+            <article>
+                <h3>Create an Account</h3>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <legend>New Member Registration</legend>
+                        <p>
+                            <label for="reg-name">Full Name:</label><br>
+                            <input type="text" id="reg-name" name="fullname" required autofocus placeholder="Jane Doe">
+                        </p>
+                        <p>
+                            <label for="reg-phone">Phone Number:</label><br>
+                            <input type="tel" id="reg-phone" name="phone" required placeholder="+7 777 000 00 00">
+                        </p>
+                        <p>
+                            <label for="reg-email">Email Address:</label><br>
+                            <input type="email" id="reg-email" name="email" required placeholder="example@mail.com">
+                        </p>
+                        <p>
+                            <label for="reg-password">Create Password (min 8 characters):</label><br>
+                            <input type="password" id="reg-password" name="new_password" minlength="8" required>
+                        </p>
+                        <p>
+                            <label>
+                                <input type="checkbox" name="terms" required> I agree to the Arubeauty Club terms and conditions.
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit">Join the Club</button>
+                            <button type="reset">Clear Form</button>
+                        </p>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacts</h2>
+        <address>
+            <p>Phone: <a href="tel:+77768480043">+7 (776) 848-00-43</a></p>
+            <p>Email: <a href="mailto:aruzzhan7@gmail.com">aruzzhan7@gmail.com</a></p>
+            <p>Address: Uly Dala 80/1, Astana</p>
+            <p>Working hours: Flexible (by appointment only)</p>
+        </address>
+        <p>&copy; 2026 Arubeauty.</p>
+    </footer>
+</body>
+</html>
