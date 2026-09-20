@@ -1,0 +1,190 @@
+/* grid layout */
+.page-content {
+    /* using grid instead of flex to make a proper 2d layout for article + sidebar */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 2.5rem;
+    
+    /* centering 1: margin auto */
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+}
+
+#about-studio, #services-overview {
+    grid-column: span 2;
+}
+
+/* float */
+.float-image-container {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    width: 350px;
+    position: relative; 
+}
+
+.floated-img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(219, 112, 147, 0.2);
+    display: block;
+}
+
+.clear-fix {
+    clear: left;
+}
+/* if I don't clear left here, the next text just wraps around the image */
+
+/* header fixed */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 120px; /* fix overlap */
+}
+
+/* positioning */
+#visit-info {
+    /* making it relative so the absolute badge stays inside */
+    position: relative; 
+    background-color: rgba(219, 112, 147, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(219, 112, 147, 0.3);
+}
+
+.status-badge {
+    /* absolute to pop it out of the normal flow */
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: rgb(219, 112, 147);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.service-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.service-img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+}
+
+.image-caption {
+    /* centering 2: absolute + transform */
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(253, 246, 247, 0.9);
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-align: center;
+    width: 80%;
+}
+
+/* flexbox for steps */
+.enrollment-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.step-card {
+    flex: 1 1 200px; 
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid rgb(219, 112, 147);
+    
+    /* centering 3: flexbox center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* selectors */
+h2 + p {
+    line-height: 1.8;
+}
+
+.skills-list > li {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.founder-quote::before {
+    content: "❝ ";
+    font-size: 2rem;
+    color: rgb(219, 112, 147);
+}
+
+th[scope="col"] {
+    text-transform: uppercase;
+}
+
+/* tables & margins */
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+/* margin collapse: the top 3rem here doesn't add up with the bottom margin of the block above, they just collapse into the bigger one */
+
+.table-cell, .table-header {
+    border: 1px solid rgba(219, 112, 147, 0.3);
+    padding: 15px;
+    text-align: left;
+}
+
+.table-header {
+    background-color: #4A3B42;
+    color: #FDF6F7;
+}
+
+.table-row:nth-child(even) {
+    background-color: rgba(219, 112, 147, 0.05);
+}
+
+/* specificity experiment */
+
+/* 0, 2, 0 */
+.content-section .founder-quote {
+    background-color: #ffffff;
+    color: #4A3B42;
+    padding: 1rem;
+}
+
+/* 1, 0, 1 */
+#about-studio blockquote {
+    background-color: rgba(219, 112, 147, 0.1);
+    border-left: 4px solid rgb(219, 112, 147);
+    padding: 1.5rem;
+    clear: both; 
+}
+/* rule 2 wins: id beats classes. no !important needed here */
+
+/* !important */
+.intro-text {
+    /* forced size just in case */
+    font-size: 1.25rem !important;
+}
