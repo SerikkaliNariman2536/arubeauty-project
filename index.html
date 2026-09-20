@@ -6,6 +6,18 @@
     <meta name="description" content="Professional makeup services and makeup courses by Arubeauty.">
     <meta name="author" content="Serikkali Nariman">
     <title>Arubeauty — Professional Makeup and Courses</title>
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nariman.css">
+    
+    <!-- Internal style block to demonstrate the cascade. 
+         This will override the base.css font-weight for h2, 
+         but will be overridden by inline styles if applied to the same element. -->
+    <style>
+        h2 {
+            font-weight: normal;
+        }
+    </style>
 </head>
 <body>
     <!-- Author: Serikkali Nariman -->
@@ -23,28 +35,43 @@
         </ul>
     </nav>
 
-    <main>
-        <article>
-            <h2>About Arubeauty Studio</h2>
-            <p>Welcome to <strong>Arubeauty</strong>, your premier destination for professional makeup services and comprehensive beauty education. Located conveniently in the heart of our beautiful city, we specialize in transforming everyday looks into extraordinary works of art. Whether you are preparing for a special event, a corporate photoshoot, or your wedding day, our mission is to emphasize your unique natural beauty.</p>
-            <p>Our studio is fully equipped with <b>professional lighting</b>, premium cosmetic brands, and comfortable seating to make your visit as relaxing as possible. We maintain the highest standards of hygiene, sanitizing all brushes and tools between every single client. Arubeauty is more than a salon; it is a creative space where art meets aesthetics.</p>
-            <p>We understand that every face is a blank canvas. As our founder believes, <q>Beauty begins the moment you decide to be yourself</q>. If you are looking for a highly skilled makeup artist (<abbr title="Makeup Artist">MUA</abbr>) who listens to your preferences, you have found the right place. We cater to clients from all over <abbr title="Kazakhstan">KZ</abbr>, ensuring that everyone leaves feeling empowered and gorgeous.</p>
+    <main class="page-content">
+        <!-- ID #about-studio is used here because there is only one unique 'about' section on this entire page -->
+        <article id="about-studio" class="content-section">
+            <h2 class="section-title">About Arubeauty Studio</h2>
+            
+            <figure class="float-image-container">
+                <img src="images/evening-look.jpg" alt="Client with elegant evening makeup and nude lips by Arubeauty" class="floated-img">
+                <figcaption class="image-caption">Elegant evening makeup highlighting natural beauty.</figcaption>
+            </figure>
+
+            <!-- Inline style attribute to show cascade overriding internal/external styles -->
+            <p class="intro-text" style="color: rgb(212, 175, 55);">
+                Welcome to <strong>Arubeauty</strong>, your premier destination for professional makeup services and comprehensive beauty education. Located conveniently in the heart of our beautiful city, we specialize in transforming everyday looks into extraordinary works of art. Whether you are preparing for a special event, a corporate photoshoot, or your wedding day, our mission is to emphasize your unique natural beauty.
+            </p>
+            
+            <p class="body-text">
+                Our studio is fully equipped with <b>professional lighting</b>, premium cosmetic brands, and comfortable seating to make your visit as relaxing as possible. We maintain the highest standards of hygiene, sanitizing all brushes and tools between every single client. Arubeauty is more than a salon; it is a creative space where art meets aesthetics.
+            </p>
+            
+            <p class="body-text clear-fix">
+                We understand that every face is a blank canvas. As our founder believes, <q>Beauty begins the moment you decide to be yourself</q>. If you are looking for a highly skilled makeup artist (<abbr title="Makeup Artist">MUA</abbr>) who listens to your preferences, you have found the right place. We cater to clients from all over <abbr title="Kazakhstan">KZ</abbr>, ensuring that everyone leaves feeling empowered and gorgeous.
+            </p>
+            
             <hr>
-            <blockquote>
+            
+            <blockquote class="founder-quote">
                 <p>I take an individual approach to every client and student, and I focus on achieving results.</p>
                 <cite>— Aruzhan, September 13, 2026</cite>
             </blockquote>
         </article>
 
-        <aside>
-            <h3>Location &amp; Visit</h3>
-            <p>We are situated in a modern facility with plenty of natural light. <br> Stop by our studio to discuss your upcoming events!</p>
+        <!-- ID #visit-info is used because this specific visit information block is unique to this page layout -->
+        <aside id="visit-info" class="sidebar-info">
+            <h3 class="subsection-title">Location &amp; Visit</h3>
+            <p class="body-text">We are situated in a modern facility with plenty of natural light. <br> Stop by our studio to discuss your upcoming events!</p>
+            <span class="status-badge">Open Now</span>
         </aside>
-
-        <figure>
-            <img src="images/evening-look.jpg" alt="Client with elegant evening makeup and nude lips by Arubeauty">
-            <figcaption>Elegant evening makeup highlighting natural beauty.</figcaption>
-        </figure>
     </main>
 
     <footer>
