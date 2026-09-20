@@ -6,6 +6,9 @@
     <meta name="description" content="Prices for professional makeup and courses at Arubeauty.">
     <meta name="author" content="Serikkali Nariman">
     <title>Services and Prices — Arubeauty</title>
+    
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nariman.css">
 </head>
 <body>
     <!-- Author: Serikkali Nariman -->
@@ -23,87 +26,94 @@
         </ul>
     </nav>
 
-    <main>
-        <section>
-            <h2>Our Services &amp; Training Programs</h2>
-            <p>At Arubeauty, we offer a diverse range of makeup services and specialized educational courses. We believe in sharing our knowledge so you can recreate stunning looks at home or even start your own career in the beauty industry. Our <i>signature</i> <em>"Do It Yourself"</em> course is incredibly popular among beginners. Water is H<sub>2</sub>O, but makeup is pure magic! We rate our student satisfaction at 100<sup>%</sup>.</p>
+    <main class="page-content">
+        <!-- ID #services-overview is used because this is the primary and unique overview section on this page -->
+        <section id="services-overview" class="content-section">
+            <h2 class="section-title">Our Services &amp; Training Programs</h2>
+            <p class="body-text">At Arubeauty, we offer a diverse range of makeup services and specialized educational courses. We believe in sharing our knowledge so you can recreate stunning looks at home or even start your own career in the beauty industry. Our <i>signature</i> <em>"Do It Yourself"</em> course is incredibly popular among beginners. Water is H<sub>2</sub>O, but makeup is pure magic! We rate our student satisfaction at 100<sup>%</sup>.</p>
             
-            <figure>
-                <img src="images/wedding-look.jpg" alt="Soft glam bridal makeup with shimmer eyeshadow">
-                <figcaption>Soft glam makeup, perfect for weddings and special occasions.</figcaption>
+            <figure class="service-image-container">
+                <img src="images/wedding-look.jpg" alt="Soft glam bridal makeup with shimmer eyeshadow" class="service-img">
+                <figcaption class="image-caption">Soft glam makeup, perfect for weddings and special occasions.</figcaption>
             </figure>
 
-            <p>Whether you want a soft, natural glow for a daytime event or a dramatic, bold look for a glamorous evening, our makeup services are tailored precisely to your needs. The Basic Makeup Artist Course is designed for absolute beginners and covers intensive days of theory and hands-on practice. Here is what you will learn in our basic professional course:</p>
-            <ul>
-                <li>Skin preparation and analysis
-                    <ul>
+            <p class="body-text">Whether you want a soft, natural glow for a daytime event or a dramatic, bold look for a glamorous evening, our makeup services are tailored precisely to your needs. The Basic Makeup Artist Course is designed for absolute beginners and covers intensive days of theory and hands-on practice. Here is what you will learn in our basic professional course:</p>
+            
+            <ul class="skills-list">
+                <li class="skill-item">Skin preparation and analysis
+                    <ul class="sub-skills-list">
                         <li>Identifying skin types</li>
                         <li>Selecting the right primer and base</li>
                     </ul>
                 </li>
-                <li>Color theory and foundation matching</li>
-                <li>Advanced eye makeup techniques</li>
+                <li class="skill-item">Color theory and foundation matching</li>
+                <li class="skill-item">Advanced eye makeup techniques</li>
             </ul>
             
-            <p>To enroll in our courses, simply follow these steps:</p>
-            <ol type="A">
-                <li>Review the pricing table below to find a course that fits your goals.</li>
-                <li>Contact us via phone or our booking page to check availability.</li>
-                <li>Secure your spot by making an initial deposit.</li>
-                <li>Attend the classes and earn your professional certificate!</li>
+            <p class="body-text">To enroll in our courses, simply follow these steps:</p>
+            
+            <!-- We will use this ordered list as a Flexbox container for "step cards" later in nariman.css -->
+            <ol class="enrollment-steps" type="A">
+                <li class="step-card">Review the pricing table below to find a course that fits your goals.</li>
+                <li class="step-card">Contact us via phone or our booking page to check availability.</li>
+                <li class="step-card">Secure your spot by making an initial deposit.</li>
+                <li class="step-card">Attend the classes and earn your professional certificate!</li>
             </ol>
 
-            <figure>
-                <img src="images/color-makeup.jpg" alt="Student showcasing creative color makeup with pink tones and curls">
-                <figcaption>Creative color techniques taught in our advanced modules.</figcaption>
+            <figure class="service-image-container">
+                <img src="images/color-makeup.jpg" alt="Student showcasing creative color makeup with pink tones and curls" class="service-img">
+                <figcaption class="image-caption">Creative color techniques taught in our advanced modules.</figcaption>
             </figure>
+        </section>
 
-            <table>
-                <caption>Arubeauty Services and Pricing</caption>
+        <!-- ID #pricing-table is used because the price table is a unique, singular component on this page -->
+        <section id="pricing-table" class="pricing-section">
+            <table class="services-table">
+                <caption class="table-caption">Arubeauty Services and Pricing</caption>
                 <thead>
-                    <tr>
-                        <th scope="col">Service</th>
-                        <th scope="col">Format</th>
-                        <th scope="col">Duration</th>
-                        <th scope="col">Price</th>
+                    <tr class="table-header-row">
+                        <th scope="col" class="table-header">Service</th>
+                        <th scope="col" class="table-header">Format</th>
+                        <th scope="col" class="table-header">Duration</th>
+                        <th scope="col" class="table-header">Price</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Day / Evening Makeup</td>
-                        <td>Individual</td>
-                        <td>1 hour</td>
-                        <td>15,000 KZT</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Day / Evening Makeup</td>
+                        <td class="table-cell">Individual</td>
+                        <td class="table-cell">1 hour</td>
+                        <td class="table-cell">15,000 KZT</td>
                     </tr>
-                    <tr>
-                        <td>Wedding Makeup</td>
-                        <td>Individual</td>
-                        <td>1 hour</td>
-                        <td>20,000 KZT</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Wedding Makeup</td>
+                        <td class="table-cell">Individual</td>
+                        <td class="table-cell">1 hour</td>
+                        <td class="table-cell">20,000 KZT</td>
                     </tr>
-                    <tr>
-                        <td>"Do It Yourself" Makeup Course</td>
-                        <td>Individual</td>
-                        <td>2 days (2-3 hrs/day)</td>
-                        <td>35,000 KZT</td>
+                    <tr class="table-row">
+                        <td class="table-cell">"Do It Yourself" Makeup Course</td>
+                        <td class="table-cell">Individual</td>
+                        <td class="table-cell">2 days (2-3 hrs/day)</td>
+                        <td class="table-cell">35,000 KZT</td>
                     </tr>
-                    <tr>
-                        <td>"Do It Yourself" Makeup Course</td>
-                        <td>Pair</td>
-                        <td>2 days (2-3 hrs/day)</td>
-                        <td>30,000 KZT</td>
+                    <tr class="table-row">
+                        <td class="table-cell">"Do It Yourself" Makeup Course</td>
+                        <td class="table-cell">Pair</td>
+                        <td class="table-cell">2 days (2-3 hrs/day)</td>
+                        <td class="table-cell">30,000 KZT</td>
                     </tr>
-                    <tr>
-                        <td>Basic Makeup Artist Course (from scratch)</td>
-                        <td>Individual</td>
-                        <td>7 days (3-4 hrs/day)</td>
-                        <td>150,000 KZT</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Basic Makeup Artist Course (from scratch)</td>
+                        <td class="table-cell">Individual</td>
+                        <td class="table-cell">7 days (3-4 hrs/day)</td>
+                        <td class="table-cell">150,000 KZT</td>
                     </tr>
-                    <tr>
-                        <td>Basic Makeup Artist Course (from scratch)</td>
-                        <td>Pair</td>
-                        <td>7 days (3-4 hrs/day)</td>
-                        <td>130,000 KZT</td>
+                    <tr class="table-row">
+                        <td class="table-cell">Basic Makeup Artist Course (from scratch)</td>
+                        <td class="table-cell">Pair</td>
+                        <td class="table-cell">7 days (3-4 hrs/day)</td>
+                        <td class="table-cell">130,000 KZT</td>
                     </tr>
                 </tbody>
             </table>
