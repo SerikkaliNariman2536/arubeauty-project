@@ -1,0 +1,24 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #4A3B42;
+    background-color: #FDF6F7;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.text-pink {
+    color: rgb(219, 112, 147) !important;
+}
+
+.border-pink {
+    border-color: rgb(219, 112, 147) !important;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: rgb(219, 112, 147) !important;
+}
+.nav-link {
+    color: #FDF6F7 !important;
+}
