@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book an appointment for makeup or training courses at Arubeauty.">
+    <meta name="author" content="Serikkali Nariman">
+    <title>Booking — Arubeauty</title>
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/nariman.css">
+</head>
+<body class="pt-5 mt-4">
+    <!-- Navbar Component[cite: 3] -->
+    <header class="fixed-top bg-black text-white text-center py-2">
+        <h1 class="display-5 fw-bold mb-0">Arubeauty</h1>
+        <p class="mb-0">Makeup Studio &amp; Training Courses</p>
+        
+        <nav class="navbar navbar-expand-md navbar-light mt-2" style="background-color: rgba(219, 112, 147, 0.15);">
+            <div class="container-fluid">
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav gap-3 text-uppercase fw-bold">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Services &amp; Prices</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="booking.html">Booking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="portal.html">Client Portal &amp; FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5 pt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <h2 class="display-6 text-center mb-4">Book Your Appointment</h2>
+                <p class="lead">We are thrilled that you have chosen Arubeauty for your makeup needs. Because we operate on a flexible schedule and work strictly by appointment, advanced booking is required to secure your desired date and time. Please fill out the form below with your accurate details. Once submitted, our team will reach out to confirm the appointment.</p>
+                
+                <p>When booking for a wedding or a large event, we highly recommend scheduling a trial session at least one month in advance. This allows us to discuss your vision, test out different color palettes, and ensure that you are completely satisfied with the final result before your big day. Our studio is equipped with multiple stations, so if you are booking the 'Do It Yourself' pair course, you and your friend will have ample space to practice comfortably.</p>
+
+                <figure class="text-center my-4">
+                    <img src="images/graphic-liner.jpg" alt="Model with bold graphic eyeliner look" class="img-fluid rounded shadow-sm" style="max-width: 400px;">
+                    <figcaption class="text-muted small mt-2">From soft natural to bold graphic liner, we tailor the look to you.</figcaption>
+                </figure>
+
+                <p>Before you book, please familiarize yourself with our studio policies regarding deposits, cancellations, and preparation. We want your experience to be seamless and stress-free.</p>
+                
+                <dl class="row bg-light p-4 rounded mb-5">
+                    <dt class="col-sm-4">Booking Deposit</dt>
+                    <dd class="col-sm-8">A non-refundable deposit is required to lock in your date. The remaining balance is due on the day of the service.</dd>
+                    <dt class="col-sm-4">Cancellation Policy</dt>
+                    <dd class="col-sm-8">If you need to cancel, please notify us at least 48 hours in advance. <mark>Late cancellations will result in a forfeit of the deposit.</mark></dd>
+                    <dt class="col-sm-4">Preparation</dt>
+                    <dd class="col-sm-8">Please arrive with a clean, makeup-free face. <small class="text-muted">Avoid using heavy moisturizers right before your appointment.</small></dd>
+                </dl>
+                
+                <form action="#" method="POST" class="p-4 rounded shadow-sm bg-white border">
+                    <fieldset>
+                        <legend class="h4 mb-4 border-bottom pb-2">Client Information &amp; Service Details</legend>
+
+                        <div class="mb-3">
+                            <label for="client-name" class="form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="client-name" name="name" required placeholder="Aruzhan Akhmetova">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="client-email" class="form-label">Email Address:</label>
+                            <input type="email" class="form-control" id="client-email" name="email" required placeholder="aruzhan@example.com">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="client-phone" class="form-label">Phone Number:</label>
+                            <input type="tel" class="form-control" id="client-phone" name="phone" required placeholder="+7 777 000 00 00">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="people-count" class="form-label">Number of people (for pair courses):</label>
+                            <input type="number" class="form-control" id="people-count" name="people_count" min="1" max="2" placeholder="1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="booking-date" class="form-label">Desired Date:</label>
+                            <input type="date" class="form-control" id="booking-date" name="date" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="service-select" class="form-label">Choose a Service:</label>
+                            <select class="form-select" id="service-select" name="service" required>
+                                <option value="">-- Please choose an option --</option>
+                                <option value="day-makeup">Day / Evening Makeup</option>
+                                <option value="wedding-makeup">Wedding Makeup</option>
+                                <option value="diy-course">"Do It Yourself" Course</option>
+                                <option value="basic-course">Basic Makeup Artist Course</option>
+                            </select>
+                        </div>
+
+                        <fieldset class="mb-3 p-3 border rounded">
+                            <legend class="h6 w-auto px-2">Preferred Time of Day</legend>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="time_preference" value="morning" id="time-morning" required>
+                                <label class="form-check-label" for="time-morning">Morning (09:00 - 13:00)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="time_preference" value="afternoon" id="time-afternoon">
+                                <label class="form-check-label" for="time-afternoon">Afternoon (13:00 - 18:00)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="time_preference" value="evening" id="time-evening">
+                                <label class="form-check-label" for="time-evening">Evening (18:00 - 21:00)</label>
+                            </div>
+                        </fieldset>
+
+                        <div class="mb-4">
+                            <label for="client-notes" class="form-label">Additional Notes or Wishes:</label>
+                            <textarea class="form-control" id="client-notes" name="notes" rows="4" placeholder="Tell me about your skin type, allergies, or makeup preferences..."></textarea>
+                        </div>
+
+                        <div class="mb-4 form-check">
+                            <input type="checkbox" class="form-check-input" name="agreement" id="agreement" required>
+                            <label class="form-check-label" for="agreement">I agree to the booking policies and terms of service.</label>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-dark px-4">Submit Request</button>
+                            <button type="reset" class="btn btn-outline-secondary px-4">Reset Form</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-black text-white text-center py-4 mt-5">
+        <div class="container">
+            <h2 class="h5 mb-3">Contacts</h2>
+            <address class="mb-0">
+                <p class="mb-1">Phone: <a href="tel:+77768480043" class="text-pink text-decoration-none">+7 (776) 848-00-43</a></p>
+                <p class="mb-1">Email: <a href="mailto:aruzzhan7@gmail.com" class="text-pink text-decoration-none">aruzzhan7@gmail.com</a></p>
+                <p class="mb-1">Address: Uly Dala 80/1, Astana</p>
+                <p class="text-muted small mt-3">&copy; 2026 Arubeauty.</p>
+            </address>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle[cite: 3] -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
