@@ -21,10 +21,6 @@
     max-width: 400px;
 }
 
-.caption-top {
-    caption-side: top;
-}
-
 .bg-pink-light {
     background-color: rgba(219, 112, 147, 0.1);
 }

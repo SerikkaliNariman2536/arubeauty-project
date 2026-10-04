@@ -16,7 +16,7 @@ For the Midterm, the project has been finalized as a cohesive, logical product. 
 * `booking.html` — A comprehensive appointment booking page with a detailed HTML5 form and future JS response containers.
 * `portal.html` — The client help center featuring a Bootstrap accordion FAQ, search, and dual authentication forms (Sign In / Register).
 * `css/base.css` — Shared styles for the overall layout, typography, and color palette.
-* `css/nariman.css` — Specific layout corrections and predefined state classes (e.g., `.is-hidden`, `.state-error`) prepared for JavaScript logic.
+* `css/custom.css` — Specific layout corrections and predefined state classes (e.g., `.is-hidden`, `.state-error`) prepared for JavaScript logic.
 * `images/` — Contains real, original photographs replacing any placeholder content.
 
 ## Three User Journeys
