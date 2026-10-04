@@ -1,0 +1,46 @@
+AI Usage Log - Web Technologies Midterm
+
+Q1: Can you explain how CSS specificity works when trying to override default Bootstrap 5 component colors (like .btn-dark or .table-dark)?
+AI explained that custom CSS needs to either be loaded after Bootstrap or use more specific selectors. It also mentioned using CSS variables (like --bs-table-bg) for safer overrides. I used this concept to safely recolor the dark tables and buttons to #2E2226 in custom.css without using !important.
+
+Q2: What is the semantic difference between 'display: none' and 'visibility: hidden' in CSS? I need to hide elements for future JavaScript manipulation.
+AI clarified that 'display: none' removes the element entirely from the document flow, while 'visibility: hidden' leaves an empty space where the element would be. I chose to create an .is-hidden class using 'display: none' for my message containers so they don't break the layout before JS triggers them.
+
+Q3: How do URL query parameters work in plain HTML? 
+AI explained the syntax of appending "?key=value" to the end of a URL in an href attribute. I applied this concept to the "Book" buttons in my services table so they link to booking.html?service=... to prepare for JS reading the URL later.
+
+Q4: How do I correctly link a <datalist> to a search input in HTML5?
+AI explained that the <datalist> needs an 'id', and the <input> needs a 'list' attribute that matches that exact id. I used this to build the autocomplete search in the FAQ section of portal.html.
+
+Q5: How do Bootstrap's data attributes like data-bs-toggle and data-bs-target work to control collapsible elements without writing custom JS?
+AI explained that Bootstrap's bundled JavaScript scans the DOM for these specific data attributes and attaches event listeners. The data-bs-target acts as a CSS selector pointing to the element that should be expanded. I used this to properly configure the FAQ accordion in portal.html using strict lowercase IDs like faq-collapse-1.
+
+Q6: What is the semantic difference between using a generic <div> versus <fieldset> and <legend> when grouping form inputs?
+AI explained that <fieldset> semantically groups related form controls, which is highly beneficial for accessibility and screen readers, while <legend> provides a caption for that group. I updated my forms in booking.html and portal.html to use these tags to structure the client information properly.
+
+Q7: What is the best practice for naming CSS classes that will be toggled by JavaScript later to show different UI states?
+AI suggested using a specific prefix like "is-" (e.g., .is-active, .is-hidden) or grouping them by state (e.g., .state-error). This separates functional JavaScript hooks from purely visual styling classes. I adopted this approach by creating .is-hidden, .state-error, and .state-success in custom.css.
+
+Q8: Is it semantically correct to use <aside> for contact information and quick links if they are placed next to the main <article>?
+AI confirmed that <aside> is intended for content that is tangentially related to the main content, such as sidebars or quick links. I used this structural knowledge to layout index.html, keeping the main studio description in an <article> and the location/booking buttons in an <aside>.
+
+Q9: How can I debug horizontal scrolling issues on mobile views (e.g., at 375px width)?
+AI recommended checking for elements with fixed widths that exceed the viewport, unconstrained images, or negative margins, rather than just applying overflow-x: hidden to the body. I used this advice to find and fix layout issues, ensuring no horizontal scrollbar appears on mobile devices naturally.
+
+Q10: How do Bootstrap spacing utilities like "pt-5" and "mt-4" interact with the standard CSS box model?
+AI explained that "pt" sets padding-top while "mt" sets margin-top, affecting the space inside and outside the element's border, respectively. I applied these classes to the <body> tag to ensure the fixed navigation bar doesn't overlap the main content when scrolling.
+
+Q11: What is the proper semantic way to add a title to an HTML <table>?
+AI stated that the <caption> element should be used as the first child of a <table> element. I refactored the pricing table in services.html to use <caption> along with Bootstrap's .caption-top utility instead of using a generic heading tag outside the table.
+
+Q12: How can I provide instructions to screen readers without making the text visible on the screen?
+AI explained the concept of visually hidden text and suggested using Bootstrap's .visually-hidden class, which hides the element visually but keeps it available for assistive technologies. I used this for the search input hint in portal.html to improve accessibility.
+
+Q13: What is the difference between manually setting an image width to 100% versus using Bootstrap's .img-fluid class?
+AI clarified that .img-fluid applies max-width: 100% and height: auto, meaning the image will scale down if the parent container is smaller, but it won't stretch beyond its original resolution. I applied this class to all images across the site to maintain their aspect ratios on mobile devices.
+
+Q14: Why use input types like "tel" and "email" in HTML5 forms instead of standard "text" inputs?
+AI explained that using specific input types provides semantic meaning and triggers appropriate virtual keyboards on mobile devices (e.g., a number pad for "tel"). I updated the contact form in booking.html to utilize type="email" and type="tel" to improve the mobile user experience.
+
+Q15: What is the difference between a Git branch and a Git tag?
+AI explained that a branch is meant for active, ongoing development, whereas a tag is a static pointer to a specific commit, used to freeze a version in time. This helped me understand why we must use "git tag midterm" to mark the frozen HTML/CSS structure before introducing JavaScript.
