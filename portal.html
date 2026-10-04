@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="data:,">
 </head>
 <body class="pt-5 mt-4">
    <header class="fixed-top bg-soft-dark text-white text-center py-2">
@@ -48,6 +49,7 @@
                             <option value="Cancellation Policy"></option>
                             <option value="Course Tools"></option>
                         </datalist>
+                        <p id="faq-search-hint" class="visually-hidden">Matching answers will appear below the search field.</p>
                         <button type="submit" id="faq-search-submit" class="btn btn-dark px-4">Search</button>
                     </form>
 
@@ -110,7 +112,7 @@
                                     <legend class="h6 text-muted mb-3">Existing Clients</legend>
                                     <div class="mb-3">
                                         <label for="login-email" class="form-label">Email:</label>
-                                        <input type="email" class="form-control" id="login-email" name="email" required placeholder="example@mail.com">
+                                        <input type="email" class="form-control" id="login-email" name="email" required placeholder="name@mail.com">
                                     </div>
                                     <div class="mb-3">
                                         <label for="login-password" class="form-label">Password:</label>
@@ -120,6 +122,7 @@
                                         <input type="checkbox" class="form-check-input" id="remember" name="remember" checked>
                                         <label class="form-check-label" for="remember">Remember me</label>
                                     </div>
+                                    <p id="login-hint" class="form-text">After you press "Sign In", the result will appear below the button.</p>
                                     <button type="submit" id="login-submit" class="btn btn-dark w-100">Sign In</button>
                                     <div id="login-message-container" class="msg-box is-hidden border mt-3"></div>
                                 </fieldset>
@@ -141,12 +144,13 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="reg-email" class="form-label">Email:</label>
-                                        <input type="email" class="form-control" id="reg-email" name="email" required placeholder="example@mail.com">
+                                        <input type="email" class="form-control" id="reg-email" name="email" required placeholder="name@mail.com">
                                     </div>
                                     <div class="mb-4">
                                         <label for="reg-password" class="form-label">Password (min 8 chars):</label>
                                         <input type="password" class="form-control" id="reg-password" name="new_password" minlength="8" required>
                                     </div>
+                                    <p id="reg-hint" class="form-text">After you press "Register", a confirmation will appear below the button.</p>
                                     <button type="submit" id="reg-submit" class="btn btn-outline-dark w-100">Register</button>
                                     <div id="reg-message-container" class="msg-box is-hidden border mt-3"></div>
                                 </fieldset>

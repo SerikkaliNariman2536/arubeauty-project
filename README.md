@@ -25,16 +25,16 @@ As required, here are three complete journeys a single visitor can take through 
 
 **Journey 1: Booking a Makeup Session**
 1. **Start:** The visitor lands on `index.html` and reads about the studio.
-2. **Steps:** They click "Services & Prices" in the navigation to review the costs on `services.html`. Deciding on the "Day / Evening Makeup", they click the "Booking" link in the navigation to go to `booking.html`.
+2. **Steps:** They click "Services & Prices" in the navigation and review the costs in the table on `services.html`. Deciding on "Day / Evening Makeup", they press the "Book" button in that row, which opens `booking.html`.
 3. **End:** They fill out their personal details, select the service and preferred time in the form, and click "Submit Request". (A hidden container with `id="booking-message-container"` is prepared below the form to display the confirmation once JavaScript is added).
 
 **Journey 2: Finding Preparation Info and Contacting the Studio**
 1. **Start:** A client needs to know how to prepare their skin for tomorrow's appointment. They start on `index.html`.
-2. **Steps:** They navigate to `portal.html` via the top menu. They scroll to the "Help Center (FAQ)" and open the accordion tab titled "How should I prepare my skin before the appointment?" to read the guidelines. 
+2. **Steps:** They navigate to `portal.html` via the top menu. They scroll to the "Help Center (FAQ)" and open the accordion tab titled "How should I prepare my skin before the appointment?" to read the guidelines.
 3. **End:** Having read the FAQ, they scroll down to the global footer on the same page and click the phone number link (`tel:+77768480043`) to call the studio and confirm their arrival time.
 
 **Journey 3: New Client Registration**
-1. **Start:** A new user wants to create an account to manage future bookings. They open `index.html`.
+1. **Start:** A new user wants to create an account to have a client account. They open `index.html`.
 2. **Steps:** They click "Client Portal & FAQ" in the navigation, arriving at `portal.html`. They scroll past the FAQ directly to the "Account Management" section.
 3. **End:** Under "Create New Account", they input their Full Name, Email, and a secure password, then click "Register". (A hidden container with `id="reg-message-container"` is ready to display the successful registration message once JS is implemented).
 

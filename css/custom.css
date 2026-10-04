@@ -25,15 +25,6 @@
     background-color: rgba(219, 112, 147, 0.1);
 }
 
-.table.table-dark {
-    background-color: #2E2226;
-}
-
-.table.table-dark th {
-    background-color: #2E2226;
-    border-color: #2E2226;
-}
-
 .btn.btn-dark {
     background-color: #2E2226;
     border-color: #2E2226;
@@ -57,6 +48,24 @@
 .state-success {
     border-color: #198754;
     background-color: rgba(25, 135, 84, 0.05);
+}
+
+.is-active {
+    font-weight: 700;
+    border-color: rgb(219, 112, 147);
+}
+
+.is-selected {
+    background-color: rgba(219, 112, 147, 0.2);
+    border-color: rgb(219, 112, 147);
+}
+
+.table > tbody > tr.is-selected > * {
+    --bs-table-bg-state: rgba(219, 112, 147, 0.2);
+}
+
+.is-highlighted {
+    background-color: rgba(212, 175, 55, 0.25);
 }
 
 .msg-box {

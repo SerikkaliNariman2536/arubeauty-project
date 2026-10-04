@@ -1,6 +1,13 @@
-Quality Pass Checklist (Found and Fixed):
-1. Fixed missing empty containers with IDs for future JavaScript output in booking.html and portal.html.
-2. Added missing state classes (.state-error, .state-success, .msg-box) to CSS.
-3. Checked all navigation links; verified there are no dead href="#" links across all pages.
-4. Tested responsive layout at 375px device width; ensured no horizontal overflow exists and Bootstrap mobile toggler works smoothly.
-5. Cleaned up inline styles and ensured zero W3C validation errors.
+Quality Pass (found and fixed):
+1. Inline style on the table caption in services.html: replaced with the Bootstrap class caption-top.
+2. The CSS file name revealed the author: renamed to custom.css, all links updated.
+3. Forms and buttons had no ids: added ids to every form and submit/reset button.
+4. camelCase ids (navbarNav, faqAccordion, collapseOne...): renamed to lowercase kebab-case, data-bs-target and data-bs-parent updated.
+5. The search results container sat inside the flex search form: moved outside it.
+6. Only error and success state classes existed: added is-hidden, is-active, is-selected, is-highlighted; message containers now use is-hidden. Removed unused table-dark styles.
+7. The price table had no way to start a booking: added a Book button to every row.
+8. Static "Open Now" badge and disabled "Walk-ins" button on the home page: removed; added opening hours and a Prices link.
+9. Invented claims (100% satisfaction) and test text removed from services.html.
+10. Unified the page title pattern, added a favicon, replaced example.com placeholders.
+11. Forms had no text about what happens after submit: added hints and a price place in the booking form.
+12. Removed overflow-x: hidden from body; checked all pages at 375px width, no horizontal scroll.

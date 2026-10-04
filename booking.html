@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="data:,">
 </head>
 <body class="pt-5 mt-4">
     <header class="fixed-top bg-soft-dark text-white text-center py-2">
@@ -67,7 +68,7 @@
 
                         <div class="mb-3">
                             <label for="client-email" class="form-label">Email Address:</label>
-                            <input type="email" class="form-control" id="client-email" name="email" required placeholder="aruzhan@example.com">
+                            <input type="email" class="form-control" id="client-email" name="email" required placeholder="name@mail.com">
                         </div>
 
                         <div class="mb-3">
@@ -94,7 +95,10 @@
                                 <option value="diy-course">"Do It Yourself" Course</option>
                                 <option value="basic-course">Basic Makeup Artist Course</option>
                             </select>
-                        </div>
+                        </div>  
+
+
+                        <p id="booking-price" class="form-text mb-3">Select a service to see its price.</p>
 
                         <fieldset class="mb-3 p-3 border rounded">
                             <legend class="h6 w-auto px-2">Preferred Time of Day</legend>
@@ -122,6 +126,8 @@
                             <label class="form-check-label" for="agreement">I agree to the booking policies and terms of service.</label>
                         </div>
 
+                        <p id="booking-hint" class="form-text mb-3">After you press "Submit Request", a confirmation will appear below the buttons, and our team will contact you to confirm the time.</p>
+                        
                         <div class="d-flex gap-2">
                             <button type="submit" id="booking-submit" class="btn btn-dark px-4">Submit Request</button>
                             <button type="reset" id="booking-reset" class="btn btn-outline-secondary px-4">Reset Form</button>

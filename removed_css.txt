@@ -1,6 +1,0 @@
-CSS Rules Removed in Assignment 3:
-1. Removed `margin: 0; padding: 0; box-sizing: border-box;` - Replaced by Bootstrap Reboot.
-2. Removed manual `header` and `footer` styling - Replaced by utility classes `py-4`, `bg-black`, `text-white`.
-3. Removed flexbox rules from `nav ul` (`display: flex`, `justify-content: center`) - Replaced by Bootstrap Navbar component.
-4. Removed `.page-content` CSS Grid (`display: grid`, `grid-template-columns`) - Replaced by Bootstrap Grid system (`container`, `row`, `col-*`).
-5. Removed manual float classes `.float-image-container` and `.clear-fix` - Replaced by Bootstrap `float-md-start` and `clearfix`.
