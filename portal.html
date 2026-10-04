@@ -40,7 +40,7 @@
                     <h2 class="display-6 text-center mb-4">Help Center (FAQ)</h2>
                     <p class="text-center text-muted mb-4">Find answers to common questions or log in to manage your bookings.</p>
                     
-                    <form action="#" method="GET" class="d-flex mb-5 shadow-sm">
+                    <form id="faq-search-form" action="#" method="GET" class="d-flex mb-5 shadow-sm">
                         <input type="search" class="form-control me-2" id="faq-search" name="q" list="faq-topics" placeholder="Type a topic (e.g., cosmetics)">
                         <datalist id="faq-topics">
                             <option value="Cosmetics Brands"></option>
@@ -48,7 +48,7 @@
                             <option value="Cancellation Policy"></option>
                             <option value="Course Tools"></option>
                         </datalist>
-                        <button type="submit" class="btn btn-dark px-4">Search</button>
+                        <button type="submit" id="faq-search-submit" class="btn btn-dark px-4">Search</button>
                         <div id="faq-search-results" class="d-none mb-4 p-3 bg-white border rounded"></div>
                     </form>
 
@@ -104,7 +104,7 @@
                     <div class="card shadow-sm h-100 border-0 bg-light">
                         <div class="card-body p-4">
                             <h3 class="card-title h4 mb-4">Sign In</h3>
-                            <form action="#" method="POST">
+                            <form id="login-form" action="#" method="POST">
                                 <fieldset>
                                     <legend class="h6 text-muted mb-3">Existing Clients</legend>
                                     <div class="mb-3">
@@ -119,7 +119,7 @@
                                         <input type="checkbox" class="form-check-input" id="remember" name="remember" checked>
                                         <label class="form-check-label" for="remember">Remember me</label>
                                     </div>
-                                    <button type="submit" class="btn btn-dark w-100">Sign In</button>
+                                    <button type="submit" id="login-submit" class="btn btn-dark w-100">Sign In</button>
                                     <div id="login-message-container" class="msg-box d-none border mt-3"></div>
                                 </fieldset>
                             </form>
@@ -131,7 +131,7 @@
                     <div class="card shadow-sm h-100 border-0 bg-light">
                         <div class="card-body p-4">
                             <h3 class="card-title h4 mb-4">Create New Account</h3>
-                            <form action="#" method="POST">
+                            <form id="reg-form" action="#" method="POST">
                                 <fieldset>
                                     <legend class="h6 text-muted mb-3">New Clients</legend>
                                     <div class="mb-3">
@@ -146,7 +146,7 @@
                                         <label for="reg-password" class="form-label">Password (min 8 chars):</label>
                                         <input type="password" class="form-control" id="reg-password" name="new_password" minlength="8" required>
                                     </div>
-                                    <button type="submit" class="btn btn-outline-dark w-100">Register</button>
+                                    <button type="submit" id="reg-submit" class="btn btn-outline-dark w-100">Register</button>
                                     <div id="reg-message-container" class="msg-box d-none border mt-3"></div>
                                 </fieldset>
                             </form>
