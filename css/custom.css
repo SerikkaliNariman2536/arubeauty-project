@@ -45,6 +45,10 @@
     border-color: #3E2F35;
 }
 
+.is-hidden {
+    display: none;
+}
+
 .state-error {
     border-color: #dc3545;
     background-color: rgba(220, 53, 69, 0.05);
