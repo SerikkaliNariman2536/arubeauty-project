@@ -12,11 +12,11 @@
     <link rel="stylesheet" href="css/nariman.css">
 </head>
 <body class="pt-5 mt-4">
-    <header class="fixed-top bg-black text-white text-center py-2">
+   <header class="fixed-top bg-soft-dark text-white text-center py-2">
         <h1 class="display-5 fw-bold mb-0">Arubeauty</h1>
         <p class="mb-0">Makeup Studio &amp; Training Courses</p>
         
-        <nav class="navbar navbar-expand-md navbar-light mt-2 nav-bg-pink">
+        <nav class="navbar navbar-expand-md navbar-dark mt-2 nav-bg-pink">
             <div class="container-fluid">
                 <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -49,6 +49,7 @@
                             <option value="Course Tools"></option>
                         </datalist>
                         <button type="submit" class="btn btn-dark px-4">Search</button>
+                        <div id="faq-search-results" class="d-none mb-4 p-3 bg-white border rounded"></div>
                     </form>
 
                     <div class="accordion shadow-sm" id="faqAccordion">
@@ -119,6 +120,7 @@
                                         <label class="form-check-label" for="remember">Remember me</label>
                                     </div>
                                     <button type="submit" class="btn btn-dark w-100">Sign In</button>
+                                    <div id="login-message-container" class="msg-box d-none border mt-3"></div>
                                 </fieldset>
                             </form>
                         </div>
@@ -145,6 +147,7 @@
                                         <input type="password" class="form-control" id="reg-password" name="new_password" minlength="8" required>
                                     </div>
                                     <button type="submit" class="btn btn-outline-dark w-100">Register</button>
+                                    <div id="reg-message-container" class="msg-box d-none border mt-3"></div>
                                 </fieldset>
                             </form>
                         </div>
@@ -154,7 +157,7 @@
         </section>
     </main>
 
-    <footer class="bg-black text-white text-center py-4 mt-5">
+    <footer class="bg-soft-dark text-white text-center py-4 mt-5">
         <div class="container">
             <h2 class="h5 mb-3">Contacts</h2>
             <address class="mb-0">
