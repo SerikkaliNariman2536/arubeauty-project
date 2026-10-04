@@ -56,7 +56,7 @@
                     <dd class="col-sm-8">Please arrive with a clean, makeup-free face. <small class="text-muted">Avoid using heavy moisturizers right before your appointment.</small></dd>
                 </dl>
                 
-                <form action="#" method="POST" class="p-4 rounded shadow-sm bg-white border">
+                <form id="booking-form" action="#" method="POST" class="p-4 rounded shadow-sm bg-white border">
                     <fieldset>
                         <legend class="h4 mb-4 border-bottom pb-2">Client Information &amp; Service Details</legend>
 
@@ -123,8 +123,8 @@
                         </div>
 
                         <div class="d-flex gap-2">
-                            <button type="submit" class="btn btn-dark px-4">Submit Request</button>
-                            <button type="reset" class="btn btn-outline-secondary px-4">Reset Form</button>
+                            <button type="submit" id="booking-submit" class="btn btn-dark px-4">Submit Request</button>
+                            <button type="reset" id="booking-reset" class="btn btn-outline-secondary px-4">Reset Form</button>
                         </div>
                         <div id="booking-message-container" class="msg-box d-none border mt-3"></div>
                     </fieldset>
